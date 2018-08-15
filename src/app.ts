@@ -61,7 +61,7 @@ export class App {
             next(createError(404));
         });
 
-        this.app.use(function(err: any, req: Request, res: Response) {
+        this.app.use(function(err: any, req: Request, res: Response, next: any) {
             // set locals, only providing error in development
             res.locals.message = err.message;
             res.locals.error = req.app.get("env") === "development" ? err : {};
