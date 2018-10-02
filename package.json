@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "npm run build && npm run watch",
+    "tcs": "tcs",
     "build": "npm run build-ts && npm run copy-static-assets",
     "serve": "node dist/bin/www.js",
     "watch": "concurrently -k -p \"[{name}]\" -n \"Sass,TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-ts\" \"nodemon dist/bin/www.js\"",
