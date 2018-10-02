@@ -1,10 +1,10 @@
-#Init
+# Init
 
 Run command: npm install
 
-#Compile and run
+# Compile and run
 
 Run command: npm start
 
-#Note
+# Note
 Please install nodemon, tcs,... as global first
