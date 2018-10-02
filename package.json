@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "start": "npm run build && npm run watch",
-    "build": "npm run build-sass && npm run build-ts && npm run copy-static-assets",
+    "build": "npm run build-ts && npm run copy-static-assets",
     "serve": "node dist/bin/www.js",
-    "watch": "concurrently -k -p \"[{name}]\" -n \"Sass,TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-sass\" \"npm run watch-ts\" \"nodemon dist/bin/www.js\"",
+    "watch": "concurrently -k -p \"[{name}]\" -n \"Sass,TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-ts\" \"nodemon dist/bin/www.js\"",
     "test": "jest --forceExit --coverage",
     "build-ts": "tsc",
     "watch-ts": "tsc -w",
